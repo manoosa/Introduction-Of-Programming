@@ -2,7 +2,8 @@ package com.prog1.assigment1;
 
 public class Question6 {
   public static void main(String[] args) {
-    final int octal = 116;
+    final Keyboard keyboard = new Keyboard();
+    final int octal = keyboard.getInputValue();
     final ConversionOfAnOctalNumber conversionResult = convertOctalToDecimalAndBinary(octal);
     System.out.printf("%d in octal = %d in decimal and %d in binary", octal, conversionResult.getDecimalNumber(), conversionResult.getBinaryNumber());
   }
