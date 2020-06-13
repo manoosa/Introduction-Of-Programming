@@ -1,6 +1,6 @@
-package com.novomind.base64;
+package com.prog1.assigment1;
 
-public class Main2 {
+public class Question2 {
   
   public static void main(String[] args) {
     int totalApples = 10;
