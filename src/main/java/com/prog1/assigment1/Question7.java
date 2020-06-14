@@ -1,12 +1,19 @@
 package com.prog1.assigment1;
 
+import java.util.Scanner;
+
 public class Question7 {
   
   public static void main(String[] args) {
-    int quarters = 3;
-    int dimes = 2;
-    int nickle = 1;
-    int pennies = 6;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter quarters: ");
+    final int quarters = scanner.nextInt();
+    System.out.print("Enter dimes: ");
+    final int dimes = scanner.nextInt();
+    System.out.print("Enter nickle: ");
+    final int nickle = scanner.nextInt();
+    System.out.print("Enter pennies: ");
+    final int pennies = scanner.nextInt();
     final double dollars = CountChange(quarters, dimes, nickle, pennies);
     System.out.printf("Total = " + dollars + " dollars");
   }

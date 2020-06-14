@@ -1,9 +1,13 @@
 package com.prog1.assigment1;
 
+import java.util.Scanner;
+
 public class Question2 {
   
   public static void main(String[] args) {
-    final int totalApples = 10;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter Total numbers of Apples: ");
+    final int totalApples = scanner.nextInt();
     final Apples2Dozen result = getNumberOfApples(totalApples);
     System.out.printf("%d dozens and %d apples", result.getDozen(), result.getApples());
   }

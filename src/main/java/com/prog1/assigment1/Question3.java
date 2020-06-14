@@ -1,9 +1,15 @@
 package com.prog1.assigment1;
 
+import java.util.Scanner;
+
 public class Question3 {
   
   public static void main(String[] args) {
-    final int m = 0, n = 10;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter first number: "); // m=20
+    final int m = scanner.nextInt();
+    System.out.print("Enter second number: "); // m=10
+    final int n = scanner.nextInt();
     final PythagoreanTriple result = getPythagoreanValues(m, n);
     
     if (result != null) {
