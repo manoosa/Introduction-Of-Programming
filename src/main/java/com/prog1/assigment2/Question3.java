@@ -1,4 +1,4 @@
-package com.prog1.assigment1;
+package com.prog1.assigment2;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.prog1.assigment1;
+package com.prog1.assigment2;
 
 public class Question6 {
   public static void main(String[] args) {
