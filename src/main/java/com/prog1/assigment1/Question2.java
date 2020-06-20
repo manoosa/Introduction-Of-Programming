@@ -14,7 +14,7 @@ public class Question2 {
   
   private static Apples2Dozen getNumberOfApples(final int totalApples) {
     final int apples = totalApples % 12;
-    final int dozen = (totalApples - apples) / 12;
+    final int dozen = (totalApples) / 12;
     return new Apples2Dozen(dozen, apples);
   }
   
