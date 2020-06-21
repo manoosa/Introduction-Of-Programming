@@ -8,7 +8,6 @@ public class Student {
   private House house;
   
   public Student(String name, int id, String gender, House house) {
-    super();
     this.name = name;
     this.id = id;
     this.gender = gender;
@@ -22,7 +21,6 @@ public class Student {
   }
   
   public Student() {
-    super();
   }
   
   public String getName() {

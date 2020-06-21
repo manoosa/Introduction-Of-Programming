@@ -8,7 +8,6 @@ public class House {
   public static int houses;
   
   public House() {
-    super();
     houses += 1;
   }
   
