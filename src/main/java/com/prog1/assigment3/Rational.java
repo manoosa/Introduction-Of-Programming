@@ -1,8 +1,8 @@
 package com.prog1.assigment3;
 
 public class Rational {
-  int numerator;
-  int denominator;
+  private int numerator;
+  private int denominator;
   
   public Rational() {
     this.numerator = 0;
