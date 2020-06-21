@@ -12,7 +12,16 @@ public class Question2 {
     System.out.println(student2.getStudentAdd());
     System.out.println(student2.getHouseInfo());
     System.out.println(House.getTotalHouses());
-    System.out.println(house1.compare(house2));
+    
+    final int result = house1.compare(house2);
+    
+    if (result == 1) {
+      System.out.println("House 1 has more men/women ratio than House 2");
+    } else if (result == 0) {
+      System.out.println("House 1 has the same men/women ratio as House 2");
+    } else {
+      System.out.println("House 1 has less men/women ratio than House 2");
+    }
     
     house2.setName("New House two");
     System.out.println(student2.getHouseInfo());
