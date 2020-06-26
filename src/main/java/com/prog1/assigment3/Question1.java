@@ -3,8 +3,8 @@ package com.prog1.assigment3;
 public class Question1 {
   
   public static void main(String[] args) {
-    final Rational rational1 = new Rational(1, 2);
-    final Rational rational2 = new Rational(1, 4);
+    final Rational rational1 = new Rational(1, 4);
+    final Rational rational2 = new Rational(1, 2);
     
     if (rational1.greater(rational2)) {
       System.out.println(rational1.get());

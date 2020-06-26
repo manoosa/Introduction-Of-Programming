@@ -63,6 +63,7 @@ public class Student {
     this.house.setAddress(address);
   }
   
+  @Override
   public String toString() {
     return "Name :" + name + "\n" + "Id :" + id + "\n" + "Gender :" + gender + "\n" + "House :" + house;
   }

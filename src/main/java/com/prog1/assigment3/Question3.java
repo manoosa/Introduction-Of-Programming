@@ -4,7 +4,7 @@ public class Question3 {
   
   public static void main(String[] args) {
     Time time1 = new Time(2, 40, 59);
-    Time time2 = new Time(6, 59, 59);
+    Time time2 = new Time(23, 59, 59);
     
     time1.addSecond();
     time1.addMinute();

@@ -1,6 +1,6 @@
 package com.prog1.assigment3;
 
-public class House {
+public class House implements Comparable<House> {
   private String name;
   private int menNo;
   private int womenNo;
@@ -63,23 +63,25 @@ public class House {
     return (float) this.menNo / this.womenNo;
   }
   
-  public int compare(House a) {
-    final float ratio = (float) this.MFRatio();
-    final float otherRatio = (float) a.MFRatio();
-    
-    if (ratio > otherRatio) {
-      return 1;
-    } else if (ratio == otherRatio) {
-      return 0;
-    } else {
-      return -1;
-    }
+  // public int compare(House a) {
+  // final float ratio = (float) this.MFRatio();
+  // final float otherRatio = (float) a.MFRatio();
+  
+  // 5-9/9-5(absolute)
+  // if (ratio > otherRatio) {
+  // return 1;
+  // } else if (ratio == otherRatio) {
+  // return 0;
+  // } else {
+  // return -1;
+  // }
+  // }
+  
+  public static int compare(House a, House b) {
+    return a.compareTo(b);
   }
   
-  public int compare(House a, House b) {
-    return a.compare(b);
-  }
-  
+  @Override
   public String toString() {
     return "Name: " + name + "\n" + "Number of Men :" + menNo + "\n" + "Number of Women :" + womenNo + "\n" + "Address :" + address;
   }
@@ -87,4 +89,12 @@ public class House {
   public static int getTotalHouses() {
     return houses;
   }
+  
+  @Override
+  public int compareTo(House o) {
+    final Float ratio = (Float) this.MFRatio();
+    final Float otherRatio = (Float) o.MFRatio();
+    return ratio.compareTo(otherRatio);
+  }
+  
 }

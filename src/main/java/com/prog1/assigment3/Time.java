@@ -30,32 +30,40 @@ public class Time {
   }
   
   public void addHour() {
-    this.hours++;
+    addSeconds(3600);
   }
   
   public void addMinute() {
-    this.minutes++;
-    
-    if (minutes > 59) {
-      minutes = minutes - 60;
-      addHour();
-    }
+    addSeconds(60);
+    // if (minutes > 59) {
+    // minutes = minutes - 60;
+    // addHour();
+    // }
   }
   
   public void addSecond() {
-    this.seconds++;
-    
-    if (seconds > 59) {
-      seconds = seconds - 60;
-      addMinute();
-    }
+    addSeconds(1);
+    // if (seconds > 59) {
+    // seconds = seconds - 60;
+    // addMinute();
+    // }
   }
   
   String display() {
     return hours + " : " + minutes + " : " + seconds;
   }
   
+  @Override
   public String toString() {
     return "Hourse :" + hours + "\n" + "Minutes :" + minutes + "\n" + "Seconds :" + seconds;
+  }
+  
+  private void addSeconds(final int seconds) {
+    this.seconds += seconds;
+    this.minutes += this.seconds / 60;
+    this.hours += minutes / 60;
+    this.seconds = this.seconds % 60;
+    this.minutes = minutes % 60;
+    this.hours = hours % 24;
   }
 }

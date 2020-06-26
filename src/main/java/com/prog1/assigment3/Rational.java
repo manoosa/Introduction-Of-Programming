@@ -1,6 +1,6 @@
 package com.prog1.assigment3;
 
-public class Rational {
+public class Rational implements Comparable<Rational> {
   private int numerator;
   private int denominator;
   
@@ -30,6 +30,14 @@ public class Rational {
   }
   
   public boolean greater(Rational rational) {
-    return this.get() > rational.get();
+    return compareTo(rational) == 1;
+    // return this.get() > rational.get();
+  }
+  
+  @Override
+  public int compareTo(Rational rational) {
+    Float a = (Float) this.get();
+    Float b = (Float) rational.get();
+    return a.compareTo(b);
   }
 }

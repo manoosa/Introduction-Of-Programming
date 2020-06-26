@@ -13,7 +13,7 @@ public class Question2 {
     System.out.println(student2.getHouseInfo());
     System.out.println(House.getTotalHouses());
     
-    final int result = house1.compare(house2);
+    final int result = house1.compareTo(house2);
     
     if (result == 1) {
       System.out.println("House 1 has more men/women ratio than House 2");
