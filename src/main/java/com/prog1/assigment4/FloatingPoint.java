@@ -10,21 +10,21 @@ public class FloatingPoint {
     InputStreamReader inStream = new InputStreamReader(System.in);
     BufferedReader stdin = new BufferedReader(inStream);
     String inData;
-    double number1;
-    double number2;
-    double number3;
+    float number1;
+    float number2;
+    float number3;
     
     System.out.print("Please enter the first number: ");
     inData = stdin.readLine();
-    number1 = Double.parseDouble(inData);
+    number1 = Float.parseFloat(inData);
     
     System.out.print("Please enter the second number: ");
     inData = stdin.readLine();
-    number2 = Double.parseDouble(inData);
+    number2 = Float.parseFloat(inData);
     
     System.out.print("Please enter the third number: ");
     inData = stdin.readLine();
-    number3 = Double.parseDouble(inData);
+    number3 = Float.parseFloat(inData);
     
     // Arrays.sort(numbers);
     
