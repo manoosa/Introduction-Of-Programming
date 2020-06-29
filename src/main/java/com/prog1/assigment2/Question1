@@ -1,0 +1,17 @@
+a)1
+b)1
+c)invalid operator '--'
+d)-1
+e) missing '*'
+f)42
+g)-50
+h)140
+i)2
+j)-7
+k)correct
+l)No Syntax Error, but Runtime error (Arithmetic exception) /zero
+m)invalid %)
+n)z=2 (bitwise AND)
+o)v=2 (bitwise OR then AND)
+p)w=2 (bitwise shift operator)
+q)97 (unicode 'a')
