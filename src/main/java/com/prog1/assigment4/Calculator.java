@@ -37,6 +37,7 @@ public class Calculator {
         System.out.println(number1 * number2);
         break;
       case '/':
+        // check null -> throw exception
         System.out.println(number1 / number2);
         break;
       case '%':

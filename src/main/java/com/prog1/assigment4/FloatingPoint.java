@@ -38,6 +38,22 @@ public class FloatingPoint {
     double most = number1 > number2 ? (number1 > number3 ? number1 : number3) : (number2 > number3 ? number2 : number3);
     double middle = (number1 != least && number1 != most) ? number1 : (number2 != least && number2 != most) ? number2 : (number3 != least && number3 != most) ? number3 : null;
     
+    // better way for if condition
+    // int min;
+    // int Max;
+    // if (num1 < num2) {
+    // min = num1;
+    // max = num2;
+    // } else {}
+    //
+    //
+    // if (num3 < min)
+    // Num3 min max
+    // else if ( num3 > max)
+    // Min max num3
+    // else
+    // Min num3 max
+    
     System.out.println("The numbers in sorted order are: ");
     System.out.println(least);
     System.out.println(middle);

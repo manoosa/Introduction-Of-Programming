@@ -12,7 +12,8 @@ public class Astrology {
     int day;
     String inData;
     String zodiac = null;
-    
+    // enum
+    // add method
     System.out.print("Please enter the month: ");
     inData = stdin.readLine();
     month = inData;
