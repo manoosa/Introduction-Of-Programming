@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Question8 {
-  public static void main(String arg[]) {
+  public static void main(String args[]) {
     Map<String, String> numberToWordMap = new HashMap<String, String>();
     numberToWordMap.put("0", "zero");
     numberToWordMap.put("1", "one");
