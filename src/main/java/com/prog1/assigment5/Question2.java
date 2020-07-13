@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Question2 {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    final Scanner scanner = new Scanner(System.in);
     System.out.println("Please enter number :");
-    int number = scanner.nextInt();
+    final int number = scanner.nextInt();
     int factorial = 1;
     
     if (number != 0) {

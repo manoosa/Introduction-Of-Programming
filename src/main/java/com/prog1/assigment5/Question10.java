@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Question10 {
   public static void main(String args[]) {
-    
-    Scanner scanner = new Scanner(System.in);
+    final Scanner scanner = new Scanner(System.in);
     System.out.println("Please enter scentence :");
     String str = scanner.nextLine();
     

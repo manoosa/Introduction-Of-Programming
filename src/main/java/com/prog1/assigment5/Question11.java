@@ -12,7 +12,7 @@ public class Question11 {
     String secondString = scanner.nextLine();
     
     System.out.println("Please enter the character you wish to remove :");
-    char character = scanner.nextLine().charAt(0);
+    char characterToRemove = scanner.nextLine().charAt(0);
     
     StringBuilder output = new StringBuilder();
     // output.append(firstString.replace(character, ""));
@@ -21,7 +21,7 @@ public class Question11 {
     for (int i = 0; i < firstString.length(); i++) {
       char value = firstString.charAt(i);
       
-      if (character != value) {
+      if (characterToRemove != value) {
         output.append(value);
       }
     }
@@ -29,7 +29,7 @@ public class Question11 {
     for (int i = 0; i < secondString.length(); i++) {
       char value = secondString.charAt(i);
       
-      if (character != value) {
+      if (characterToRemove != value) {
         output.append(value);
       }
     }
