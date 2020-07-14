@@ -17,6 +17,8 @@ public class Question5 {
     int x2 = Integer.valueOf(secondPoints[0]);
     int y2 = Integer.valueOf(secondPoints[1]);
     int slope = (y2 - y1) / (x2 - x1);
+    // The perpendicular slope will be the opposite reciprocal of the original slope
+    // perpendicular will throw an error in this implementation
     
     System.out.print("Striaght line is : y = " + slope + "x + " + (y1 + -(slope * x1)));
   }

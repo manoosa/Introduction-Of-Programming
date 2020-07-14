@@ -27,6 +27,7 @@ public class Question8 {
     for (int i = 0; i < str.length(); i++) {
       // str.substring(i, i + 1);
       char value = str.charAt(i);
+      // Complexity : O(n) for subString and O(1) for charAt
       
       if (numberToWordMap.containsKey(value)) {
         newStr.append(numberToWordMap.get(value));

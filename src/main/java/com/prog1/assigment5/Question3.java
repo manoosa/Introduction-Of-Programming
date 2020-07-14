@@ -6,7 +6,7 @@ public class Question3 {
   private static final String EMPTY_STRING = "";
   
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    final Scanner scanner = new Scanner(System.in);
     System.out.println("Please enter number :");
     int number = scanner.nextInt();
     String binaryNo = EMPTY_STRING;
@@ -16,7 +16,11 @@ public class Question3 {
       number = number / 2;
     }
     
-    System.out.println("Binary number:" + binaryNo);
+    if (binaryNo.equals(EMPTY_STRING)) {
+      System.out.println("Invalid number: " + number);
+    } else {
+      System.out.println("Binary number:" + binaryNo);
+    }
   }
   
   // I can also create an array and add the binary number
