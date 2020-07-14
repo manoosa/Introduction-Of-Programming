@@ -5,7 +5,7 @@ public class Question4 {
     final int r1 = 116, r2 = 116, r3 = 5;
     final int seriousConnection = seriousConnection(r1, r2, r3);
     final double parralelConnection = parralelConnection(r1, r2, r3);
-    System.out.printf("resistance outputs = " + seriousConnection + " in serious and " + parralelConnection + " in parralel");
+    System.out.printf("resistance outputs= " + seriousConnection + " in serious and " + parralelConnection + " in parralel");
   }
   
   public static double parralelConnection(final int r1, final int r2, final int r3) {
