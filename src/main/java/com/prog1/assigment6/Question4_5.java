@@ -5,7 +5,7 @@ import java.util.Scanner;
 //Write a program to deal with complex numbers (addition, subtraction, multiplication, division, and conjugate). 
 //The input should be two complex numbers and an operation of the proceeding ones. 
 //Use functions for each operation and the main program only for calling them according to the input
-public class Question4 {
+public class Question4_5 {
   public static void main(String[] args) {
     final Scanner scanner = new Scanner(System.in);
     System.out.println("Please enter first number :");
@@ -43,20 +43,20 @@ public class Question4 {
   }
   
   private static void complexNumbersAddition(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
-    int realAddition = firstComplexNumber.getComplexRealNumber() + secondComplexNumber.getComplexRealNumber();
-    int imginaryAddition = firstComplexNumber.getComplexImaginaryNumber() + secondComplexNumber.getComplexImaginaryNumber();
+    double realAddition = firstComplexNumber.getComplexRealNumber() + secondComplexNumber.getComplexRealNumber();
+    double imginaryAddition = firstComplexNumber.getComplexImaginaryNumber() + secondComplexNumber.getComplexImaginaryNumber();
     System.out.println("Addition is: " + realAddition + " + " + imginaryAddition + "i");
   }
   
   private static void complexNumbersSubtraction(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
-    int realSubtraction = firstComplexNumber.getComplexRealNumber() - secondComplexNumber.getComplexRealNumber();
-    int imginarySubtraction = firstComplexNumber.getComplexImaginaryNumber() - secondComplexNumber.getComplexImaginaryNumber();
+    double realSubtraction = firstComplexNumber.getComplexRealNumber() - secondComplexNumber.getComplexRealNumber();
+    double imginarySubtraction = firstComplexNumber.getComplexImaginaryNumber() - secondComplexNumber.getComplexImaginaryNumber();
     System.out.println("Subtraction is: " + realSubtraction + " + " + imginarySubtraction + "i");
   }
   
   private static void complexNumbersMultiplication(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
-    int realMultiplication = firstComplexNumber.getComplexRealNumber() * secondComplexNumber.getComplexRealNumber();
-    int imginaryMultiplication = firstComplexNumber.getComplexImaginaryNumber() * secondComplexNumber.getComplexImaginaryNumber();
+    double realMultiplication = firstComplexNumber.getComplexRealNumber() * secondComplexNumber.getComplexRealNumber();
+    double imginaryMultiplication = firstComplexNumber.getComplexImaginaryNumber() * secondComplexNumber.getComplexImaginaryNumber();
     System.out.println("Multiplication is: " + realMultiplication + " + " + imginaryMultiplication + "i");
   }
   
@@ -66,8 +66,8 @@ public class Question4 {
       return;
     }
     
-    int realDivision = firstComplexNumber.getComplexRealNumber() / secondComplexNumber.getComplexRealNumber();
-    int imginaryDivision = firstComplexNumber.getComplexImaginaryNumber() / secondComplexNumber.getComplexImaginaryNumber();
+    double realDivision = firstComplexNumber.getComplexRealNumber() / secondComplexNumber.getComplexRealNumber();
+    double imginaryDivision = firstComplexNumber.getComplexImaginaryNumber() / secondComplexNumber.getComplexImaginaryNumber();
     System.out.println("Division is: " + realDivision + " + " + imginaryDivision + "i");
   }
   
@@ -88,37 +88,10 @@ public class Question4 {
       String[] complexNumber = number.split("\\+");
       String complexImaginaryNumber = complexNumber[1];
       complexImaginaryNumber = complexImaginaryNumber.replace("i", "");
-      return new ComplexNumber(Integer.valueOf(complexNumber[0]), Integer.valueOf(complexImaginaryNumber));
+      return new ComplexNumber(Double.parseDouble(complexNumber[0]), Double.parseDouble(complexImaginaryNumber));
     }
     
     return null;
   }
   
-  public static class ComplexNumber {
-    private int complexRealNumber;
-    private int complexImaginaryNumber;
-    
-    public ComplexNumber(int complexRealNumber, int complexImaginaryNumber) {
-      super();
-      this.complexRealNumber = complexRealNumber;
-      this.complexImaginaryNumber = complexImaginaryNumber;
-    }
-    
-    public int getComplexRealNumber() {
-      return complexRealNumber;
-    }
-    
-    public void setComplexRealNumber(int complexRealNumber) {
-      this.complexRealNumber = complexRealNumber;
-    }
-    
-    public int getComplexImaginaryNumber() {
-      return complexImaginaryNumber;
-    }
-    
-    public void setComplexImaginaryNumber(int complexImaginaryNumber) {
-      this.complexImaginaryNumber = complexImaginaryNumber;
-    }
-    
-  }
 }
