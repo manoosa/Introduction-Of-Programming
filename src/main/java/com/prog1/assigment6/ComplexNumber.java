@@ -32,6 +32,10 @@ public class ComplexNumber {
     this.complexImaginaryNumber = complexImaginaryNumber;
   }
   
+  public static int getComplexNumberCount() {
+    return complexNumberCount;
+  }
+  
   public static boolean compare(final ComplexNumber a, final ComplexNumber b) {
     final Double realNumber = a.getComplexRealNumber();
     final Double otherRealNumber = b.getComplexRealNumber();
