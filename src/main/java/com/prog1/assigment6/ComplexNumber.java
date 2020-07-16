@@ -4,6 +4,7 @@ public class ComplexNumber {
   
   private double complexRealNumber;
   private double complexImaginaryNumber;
+  static int complexNumberCount = 0;
   
   public ComplexNumber() {
   }
@@ -12,6 +13,7 @@ public class ComplexNumber {
     super();
     this.complexRealNumber = complexRealNumber;
     this.complexImaginaryNumber = complexImaginaryNumber;
+    complexNumberCount++;
   }
   
   public double getComplexRealNumber() {
