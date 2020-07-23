@@ -5,7 +5,7 @@ package com.prog1.assigment6;
 //Provide your pseudocode or flowchart only (No program required)
 public class Question3 {
   public static void main(String[] args) {
-    int x = 2, y = 3;
+    int x = -2, y = 0;
     Variables newVariables = swap(x, y);
     System.out.println("After swaping:" + " x = " + newVariables.getVariable1() + ", y = " + newVariables.getVariable2());
   }

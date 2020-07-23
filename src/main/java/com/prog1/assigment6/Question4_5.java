@@ -42,64 +42,23 @@ public class Question4_5 {
     
     switch (operation) {
       case '+':
-        complexNumbersAddition(firstComplexNumber, secondComplexNumber);
+        ComplexNumber.complexNumbersAddition(firstComplexNumber, secondComplexNumber);
         break;
       case '-':
-        complexNumbersSubtraction(firstComplexNumber, secondComplexNumber);
+        ComplexNumber.complexNumbersSubtraction(firstComplexNumber, secondComplexNumber);
         break;
       case '*':
-        complexNumbersMultiplication(firstComplexNumber, secondComplexNumber);
+        ComplexNumber.complexNumbersMultiplication(firstComplexNumber, secondComplexNumber);
         break;
       case '/':
-        complexNumbersDivision(firstComplexNumber, secondComplexNumber);
+        ComplexNumber.complexNumbersDivision(firstComplexNumber, secondComplexNumber);
         break;
       case '!':
-        complexNumbersConjugate(firstComplexNumber, secondComplexNumber);
+        ComplexNumber.complexNumbersConjugate(firstComplexNumber, secondComplexNumber);
         break;
       default:
         System.out.println("Invalid operation");
     }
-  }
-  
-  private static void complexNumbersAddition(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
-    double realAddition = firstComplexNumber.getComplexRealNumber() + secondComplexNumber.getComplexRealNumber();
-    double imginaryAddition = firstComplexNumber.getComplexImaginaryNumber() + secondComplexNumber.getComplexImaginaryNumber();
-    System.out.println("Addition is: " + realAddition + " + " + imginaryAddition + "i");
-  }
-  
-  private static void complexNumbersSubtraction(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
-    double realSubtraction = firstComplexNumber.getComplexRealNumber() - secondComplexNumber.getComplexRealNumber();
-    double imginarySubtraction = firstComplexNumber.getComplexImaginaryNumber() - secondComplexNumber.getComplexImaginaryNumber();
-    System.out.println("Subtraction is: " + realSubtraction + " + " + imginarySubtraction + "i");
-  }
-  
-  private static void complexNumbersMultiplication(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
-    double realMultiplication = firstComplexNumber.getComplexRealNumber() * secondComplexNumber.getComplexRealNumber();
-    double imginaryMultiplication = firstComplexNumber.getComplexImaginaryNumber() * secondComplexNumber.getComplexImaginaryNumber();
-    System.out.println("Multiplication is: " + realMultiplication + " + " + imginaryMultiplication + "i");
-  }
-  
-  private static void complexNumbersDivision(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
-    if (secondComplexNumber.getComplexRealNumber() == 0 || secondComplexNumber.getComplexImaginaryNumber() == 0) {
-      System.out.println("Invalid Division");
-      return;
-    }
-    
-    double realDivision = firstComplexNumber.getComplexRealNumber() / secondComplexNumber.getComplexRealNumber();
-    double imginaryDivision = firstComplexNumber.getComplexImaginaryNumber() / secondComplexNumber.getComplexImaginaryNumber();
-    System.out.println("Division is: " + realDivision + " + " + imginaryDivision + "i");
-  }
-  
-  private static void complexNumbersConjugate(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
-    
-    String firstNumber = firstComplexNumber.getComplexRealNumber() + " + " + firstComplexNumber.getComplexImaginaryNumber() + "i";
-    String secondNumber = secondComplexNumber.getComplexRealNumber() + " + " + secondComplexNumber.getComplexImaginaryNumber() + "i";
-    
-    String firstNumberConjugate = firstComplexNumber.getComplexRealNumber() + " - " + firstComplexNumber.getComplexImaginaryNumber() + "i";
-    String secondNumberConjugate = secondComplexNumber.getComplexRealNumber() + " - " + secondComplexNumber.getComplexImaginaryNumber() + "i";
-    
-    System.out.println("Conjugate of " + firstNumber + " = " + firstNumberConjugate);
-    System.out.println("Conjugate of " + secondNumber + " = " + secondNumberConjugate);
   }
   
 }

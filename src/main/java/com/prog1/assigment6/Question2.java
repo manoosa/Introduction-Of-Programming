@@ -20,7 +20,7 @@ public class Question2 {
     }
   }
   
-  static int getPerrinNumber(int number) {
+  private static int getPerrinNumber(int number) {
     if (number == 0)
       return 3;
     

@@ -49,6 +49,47 @@ public class ComplexNumber {
     return false;
   }
   
+  protected static void complexNumbersAddition(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
+    double realAddition = firstComplexNumber.getComplexRealNumber() + secondComplexNumber.getComplexRealNumber();
+    double imginaryAddition = firstComplexNumber.getComplexImaginaryNumber() + secondComplexNumber.getComplexImaginaryNumber();
+    System.out.println("Addition is: " + realAddition + " + " + imginaryAddition + "i");
+  }
+  
+  protected static void complexNumbersSubtraction(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
+    double realSubtraction = firstComplexNumber.getComplexRealNumber() - secondComplexNumber.getComplexRealNumber();
+    double imginarySubtraction = firstComplexNumber.getComplexImaginaryNumber() - secondComplexNumber.getComplexImaginaryNumber();
+    System.out.println("Subtraction is: " + realSubtraction + " + " + imginarySubtraction + "i");
+  }
+  
+  protected static void complexNumbersMultiplication(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
+    double realMultiplication = firstComplexNumber.getComplexRealNumber() * secondComplexNumber.getComplexRealNumber();
+    double imginaryMultiplication = firstComplexNumber.getComplexImaginaryNumber() * secondComplexNumber.getComplexImaginaryNumber();
+    System.out.println("Multiplication is: " + realMultiplication + " + " + imginaryMultiplication + "i");
+  }
+  
+  protected static void complexNumbersDivision(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
+    if (secondComplexNumber.getComplexRealNumber() == 0 || secondComplexNumber.getComplexImaginaryNumber() == 0) {
+      System.out.println("Invalid Division");
+      return;
+    }
+    
+    double realDivision = firstComplexNumber.getComplexRealNumber() / secondComplexNumber.getComplexRealNumber();
+    double imginaryDivision = firstComplexNumber.getComplexImaginaryNumber() / secondComplexNumber.getComplexImaginaryNumber();
+    System.out.println("Division is: " + realDivision + " + " + imginaryDivision + "i");
+  }
+  
+  protected static void complexNumbersConjugate(ComplexNumber firstComplexNumber, ComplexNumber secondComplexNumber) {
+    
+    String firstNumber = firstComplexNumber.getComplexRealNumber() + " + " + firstComplexNumber.getComplexImaginaryNumber() + "i";
+    String secondNumber = secondComplexNumber.getComplexRealNumber() + " + " + secondComplexNumber.getComplexImaginaryNumber() + "i";
+    
+    String firstNumberConjugate = firstComplexNumber.getComplexRealNumber() + " - " + firstComplexNumber.getComplexImaginaryNumber() + "i";
+    String secondNumberConjugate = secondComplexNumber.getComplexRealNumber() + " - " + secondComplexNumber.getComplexImaginaryNumber() + "i";
+    
+    System.out.println("Conjugate of " + firstNumber + " = " + firstNumberConjugate);
+    System.out.println("Conjugate of " + secondNumber + " = " + secondNumberConjugate);
+  }
+  
   @Override
   public String toString() {
     return "The complex number is: " + complexRealNumber + " + " + complexImaginaryNumber + "i";
