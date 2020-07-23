@@ -22,13 +22,17 @@ public class Question1 {
     System.out.println("Answer = " + result);
   }
   
-  private static long getResult(int exponent, final int base) {
+  private static long getResult(final int exponent, final int base) {
     long result = 1;
     
-    while (exponent != 0) {
+    for (int i = exponent; i > 0; i--) {
       result *= base;
-      --exponent;
     }
+    // better for loop if you know start and end
+    // while (exponent != 0) {
+    // result *= base;
+    // --exponent;
+    // }
     
     return result;
   }

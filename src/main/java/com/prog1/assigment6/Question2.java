@@ -18,7 +18,6 @@ public class Question2 {
     } else {
       System.out.println(number + " is not prime");
     }
-    
   }
   
   static int getPerrinNumber(int number) {

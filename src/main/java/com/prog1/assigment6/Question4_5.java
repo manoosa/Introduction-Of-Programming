@@ -37,8 +37,8 @@ public class Question4_5 {
     String inData = scanner.next();
     char operation = inData.charAt(0);
     
-    ComplexNumber firstComplexNumber = getComplexNumbers(firstNumber);
-    ComplexNumber secondComplexNumber = getComplexNumbers(secondNumber);
+    ComplexNumber firstComplexNumber = new ComplexNumber(firstNumber);
+    ComplexNumber secondComplexNumber = new ComplexNumber(secondNumber);
     
     switch (operation) {
       case '+':
@@ -100,17 +100,6 @@ public class Question4_5 {
     
     System.out.println("Conjugate of " + firstNumber + " = " + firstNumberConjugate);
     System.out.println("Conjugate of " + secondNumber + " = " + secondNumberConjugate);
-  }
-  
-  private static ComplexNumber getComplexNumbers(final String number) {
-    if (number.indexOf('+') != -1) {
-      String[] complexNumber = number.split("\\+");
-      String complexImaginaryNumber = complexNumber[1];
-      complexImaginaryNumber = complexImaginaryNumber.replace("i", "");
-      return new ComplexNumber(Double.parseDouble(complexNumber[0]), Double.parseDouble(complexImaginaryNumber));
-    }
-    
-    return null;
   }
   
 }
