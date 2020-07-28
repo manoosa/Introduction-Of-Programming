@@ -1,6 +1,7 @@
 package com.prog1.assigment7;
 
-import java.util.Arrays;
+//Write a Java method with the following signature that copies an array of datatype int and
+//returns a reference to the copy.
 
 public class Question1 {
   public static void main(String[] args) {
@@ -12,7 +13,13 @@ public class Question1 {
       return;
     }
     
-    System.out.println(Arrays.toString(copy));
+    // System.out.println(Arrays.toString(copy));
+    
+    System.out.println("Copied array: ");
+    
+    for (int i = 0; i < copy.length; i++) {
+      System.out.print(copy[i] + " ");
+    }
   }
   
   public static int[] array_copy(final int[] intArray) {

@@ -1,5 +1,7 @@
 package com.prog1.assigment7;
 
+//Write a Java method that given an array of positive integers and a key will return true if and
+//only if the key occurs in the array otherwise it will return false. 
 public class Question2 {
   public static void main(String[] args) {
     final int[] data = { 47, 24, 1, 3, 141, 32 };

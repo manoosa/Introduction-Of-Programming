@@ -1,8 +1,10 @@
 package com.prog1.assigment7;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+//Write Java methods Union and Intersection that, given two arrays of integers, prints the
+//union and intersection of the two arrays.
 
 public class Question3 {
   public static void main(String[] args) {
@@ -16,7 +18,12 @@ public class Question3 {
       System.out.println("No union values");
     }
     
-    System.out.println("The union of both the arrays is: " + Arrays.toString(unionArray));
+    System.out.println("The union of both the arrays are: ");
+    
+    for (int i = 0; i < unionArray.length; i++) {
+      System.out.print(unionArray[i] + " ");
+    }
+    System.out.println();
     
     final int[] intersectionArray = getIntersectionArray(arrayOne, arrayTwo);
     
@@ -24,8 +31,11 @@ public class Question3 {
       System.out.println("No intersection values");
     }
     
-    System.out.println("The intersection of both the arrays is: " + Arrays.toString(intersectionArray));
+    System.out.println("The intersection of both the arrays are: ");
     
+    for (int i = 0; i < intersectionArray.length; i++) {
+      System.out.print(intersectionArray[i] + " ");
+    }
   }
   
   private static int[] getUnionArray(final int[] arrayOne, final int[] arrayTwo) {
