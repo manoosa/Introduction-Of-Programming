@@ -5,7 +5,7 @@ package com.prog1.assigment7;
 
 public class Question4 {
   public static void main(String[] args) {
-    final int[][] array = new int[][] { new int[] { 1, 2, 5, -9 }, new int[] { 2, 200 }, new int[] { 2, 2, 3 } };
+    final int[][] array = new int[][] { new int[] { 1, 2, 5, -9 }, new int[] { 2, 0 }, new int[] { 2, 2, 3 } };
     final int[] rowSum = new int[array.length];
     
     for (int i = 0; i < array.length; i++) {
@@ -14,14 +14,12 @@ public class Question4 {
       }
     }
     
-    int temp;
-    
     for (int j = rowSum.length; j > 0; j--) {
       boolean isSwap = false;
       
       for (int i = 1; i < j; i++) {
         if (rowSum[i - 1] < rowSum[i]) {
-          temp = rowSum[i - 1];
+          int temp = rowSum[i - 1];
           rowSum[i - 1] = rowSum[i];
           rowSum[i] = temp;
           final int[] tempArray = array[i - 1];

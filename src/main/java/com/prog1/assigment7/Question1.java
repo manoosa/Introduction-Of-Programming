@@ -13,8 +13,6 @@ public class Question1 {
       return;
     }
     
-    // System.out.println(Arrays.toString(copy));
-    
     System.out.println("Copied array: ");
     
     for (int i = 0; i < copy.length; i++) {
